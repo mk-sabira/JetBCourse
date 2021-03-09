@@ -72,4 +72,10 @@ fun main() {
     val name = scanner.next()
 
     println("What a great name you have, $name!")
+
+    val age = scanner.nextInt()
+    println("$age is great age to start to learn programming!")
+
+
+
 }
