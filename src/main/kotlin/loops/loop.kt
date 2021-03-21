@@ -60,6 +60,8 @@ package loops
 //}
 
 import java.util.Scanner
+import kotlin.math.max
+
 
 fun main() {
 //    val scanner = Scanner(System.`in`)
@@ -230,9 +232,6 @@ fun main() {
 //    println(d.isDigit())
 
 
-
-
-
 //    val a : Char = readLine()!!.first()
 //    val b : Char = readLine()!!.first()
 //    val c : Char = readLine()!!.first()
@@ -280,18 +279,236 @@ fun main() {
 //
 //    println("${name?.get(0)}. $lastName")
 
+//    Ranges task 1
+
+//    val num1 = readLine()!!.toInt()
+//    val num2 = readLine()!!.toInt()
+//    val num3 = readLine()!!.toInt()
+//    val num4 = readLine()!!.toInt()
+//    val num5 = readLine()!!.toInt()
+//
+//    println(num5 in num1..num2 && num5 in num3..num4)
+
+//    task 3
+//    val num1 = readLine()!!.toInt()
+//    val num2 = readLine()!!.toInt()
+//    val num3 = readLine()!!.toInt()
+//
+//    println(num1 in num2..num3)
+// task 4
+//    val range = 18..59
+//    val age = readLine()!!.toInt()
+//    println(age in range)
+
+//    if expression
+//    val a = readLine()!!.toInt()
+//    val b = readLine()!!.toInt()
+//    val c = readLine()!!.toInt()
+//
+//    println(if (a > c) {
+//        if (a > b) a else b
+//    } else {
+//        if (b > c) b else c
+//    })
+
+//    Task 2
+//    val a = readLine()!!.toInt()
+//    if (a % 2 == 0) {
+//        println("Divided by 2")}
+//    if (a % 3 == 0){
+//        println("Divided by 3") }
+//    if (a % 5 == 0){
+//        println("Divided by 5") }
+//    if (a % 6 == 0){
+//        println("Divided by 6") }
+
+//    task 3
+//    val a = readLine()!!.toInt()
+//
+//
+////    val check =  (-15 < a && a < 12)|| (a in 15..16)|| (19<= a )
+//    println(
+//        if ((-15 < a && a < 12) || (a in 15..16) || (19<= a )) {
+//            "True"
+//        } else {
+//            "False"
+//        }
+//    )
+
+//    Task 4
+//    val a = readLine()!!.toInt()
+//    val b = readLine()!!.toInt()
+//    if (a >= b) {
+//        println(a ) }
+//    if (b >= a){
+//        println(b )}
+
+//    task 5
+//    val a = readLine()!!.toInt()
+//    val b = readLine()!!.toInt()
+//    val c = readLine()!!.toInt()
+//    println(
+//        if ( a + b > c && b + c > a && a + c > b){
+//           "YES"
+//        }else "NO"
+//    )
+
+//    task 7
+//    val a = readLine()!!.toInt()
+//    val range = 1900..3000
+//    println(
+//        if ((a in range && a % 4 == 0 && a % 100 != 0) || a % 400 == 0 ){
+//            "Leap"
+//        } else {
+//            "Regular"
+//        }
+//    )
+//
+// Task exam
+//    val num = readLine()
+//    if (num != null) {
+//        println(num.first())
+//    }
+//
+//    task exam
+//    var num = readLine()!!.toInt()
+////
+//    println("${num / 100 +(num % 100) / 10 + num % 10} ")
+
+//    Loop repeat ()
+
+//    val n = readLine()!!.toInt()
+//    var posNum = 0
+//    repeat(n) {
+//        val num = readLine()!!.toInt()
+//        if (num > 0) {
+//            posNum++
+//        }
+//    }
+//    println(posNum)
+//    task 2
+
+//    val n = readLine()!!.toInt()
+//    var posNum = 0
+//    var nonPNum = 0
+//    var zero = 0
+//    repeat(n) {
+//        val num = readLine()!!.toInt()
+//        if (num > 0) posNum++
+//        if (num < 0) nonPNum++
+//        if (num == 0) zero++
+//    }
+//    println("$zero $posNum $nonPNum ")
+//    task 3
+//    val line = readLine()
+//    repeat(10){
+//        println(line)
+//    }
+// task 4
+//    var number = 5
+//
+//    repeat(2) {
+//        number--
+//    }
+//
+//    repeat(0) {
+//        number--
+//    }
+//
+//    repeat(1) {
+//        number--
+//    }
+//
+//    println(number)
+//}
+
+// task 5
+//    val n = readLine()!!.toInt()
+//    var numD = 0
+//    var numC = 0
+//    var numB = 0
+//    var numA = 0
+//    repeat(n) {
+//        val num = readLine()!!.toInt()
+//        if (num == 2) numD++
+//        if (num == 3) numC++
+//        if (num == 4) numB++
+//        if (num == 5) numA++
+//    }
+//    println("$numD $numC $numB $numA")
+
+//    test
+//    val normalHour = readLine()!!.toInt()
+//    val notNormal = readLine()!!.toInt()
+//    val howMany = readLine()!!.toInt()
+//    if (normalHour <= notNormal){
+//        if (howMany >= normalHour && howMany < notNormal) println("Normal")
+//        if (howMany < normalHour) println("Deficiency")
+//        if (howMany >= notNormal) println("Excess")
+//    }
 
 
+//    for loop
+//    val a = readLine()!!.toInt()
+//    val b = readLine()!!.toInt()
+//    val n = readLine()!!.toInt()
+//
+//    if ( a < b){
+//        a % n == 0 && b % n == 0
+//    }
+//   task 2
+//    val n = readLine()!!.toInt()
+//    var sum = 0
+//
+//    for (i in 1..n ) {
+//        var num = readLine()!!.toInt()
+//            sum += num
+//        }
+//    println(sum)
 
+//    task 4
 
+//    val n = readLine()!!.toInt()
+//    var result = 0 // starting value of the factorial
+////
+////    for (i in 2..n) { // the product from 2 to n
+////        result *= i
+////    }
+////
+////    println(result)
+//    for (i in 1..n){
+//        result +=i
+//    }
+//    println("sum of numbers intil $n is $result")
 
+//    val n = readLine()!!.toInt()
+//    var sum = 0
+//    for (i in 1..n){
+//        val num = readLine()!!.toInt()
+//        sum += num
+//
+//    }
+//    println(sum)
+    var n = readLine()!!.toInt()
 
-
-
-
-
+    var maxValue = 0
+    for (i in 1..n){
+        var num = readLine()!!.toInt()
+        if ( i > num)
+            maxValue = i
+    }
+    println(maxValue)
 
 }
+
+
+
+
+
+
+
+
+
 
 
 
