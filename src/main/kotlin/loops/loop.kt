@@ -59,9 +59,6 @@ package loops
 //    println("x o x")
 //}
 
-import java.util.Scanner
-import kotlin.math.max
-
 
 fun main() {
 //    val scanner = Scanner(System.`in`)
@@ -489,23 +486,75 @@ fun main() {
 //
 //    }
 //    println(sum)
-    var n = readLine()!!.toInt()
+//    var n = readLine()!!.toInt()
+//    var minValue = n
+//
+//    for (i in 1..n){
+//        var num = readLine()!!.toInt()
+//        if ( minValue < num)
+//            num = minValue
+//        num
+//    }
+//    println(minValue)
 
-    var maxValue = 0
-    for (i in 1..n){
-        var num = readLine()!!.toInt()
-        if ( i > num)
-            maxValue = i
-    }
-    println(maxValue)
+//    task 5
+
+//    var a = readLine()!!.toInt()
+//    var b = readLine()!!.toInt()
+//    var result: Long = 1
+//    for (i in a until b) {
+//        result *= i
+//    }
+//    println(result)
+//    var a = readLine()!!.toInt()
+//    var b = readLine()!!.toInt()
+//    var n = readLine()!!.toInt()
+//    var numOf = 0
+//
+//    for (i in a..b){
+//        if (i % n == 0)
+//            numOf += 1
+//    }
+//    println(numOf)
+//    function
+//    task 1
+//    val a = readLine()!!.toInt()
+//    val b = readLine()!!.toInt()
+//    val c = readLine()!!.toInt()
+//
+//    println(sum(a, b, c))
+
+
 
 }
 
+fun sum(a:Int, b:Int, c:Int): Int {
+    return a + b + c
+}
 
+fun isVowel(letter: Char): Boolean {
+    return (letter == 'a' || letter == 'A' || letter == 'o' || letter == 'O' ||
+            letter == 'e' || letter == 'E' || letter == 'u' || letter == 'U' ||
+            letter == 'i' || letter == 'I')
 
+}
+fun square(a: Int): Int{
+    val b = a * a
+    return b
+}
 
+fun divide(a: Long, b: Long): Double {
+    val c = a.toDouble()
+    val d = b.toDouble()
+    var result: Double = c / d
+    return result
+}
 
+fun isRightEquation(a: Int, b: Int, c: Int): Boolean {
+    return a * b == c
+}
 
+fun isGreater(a: Int, b: Int, c: Int, d: Int) = a + b > c + d
 
 
 
