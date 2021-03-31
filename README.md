@@ -1,2 +1,2 @@
 # JetBCourse
-some examples which I have solved 
+My first project on Jet Brain's Cource
