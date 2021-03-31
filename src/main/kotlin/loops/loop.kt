@@ -1,5 +1,10 @@
 package loops
 
+import java.lang.System.*
+import java.util.*
+import java.lang.System as System1
+import kotlin.text.split as split
+
 //fun main() {
 //    For loop
 
@@ -60,7 +65,7 @@ package loops
 //}
 
 
-fun main() {
+//fun main() {
 //    val scanner = Scanner(System.`in`)
 //
 //    println("Hello! My name is Aid.")
@@ -526,35 +531,122 @@ fun main() {
 
 
 
-}
+//}
+//
+//fun sum(a:Int, b:Int, c:Int): Int {
+//    return a + b + c
+//}
+//
+//fun isVowel(letter: Char): Boolean {
+//    return (letter == 'a' || letter == 'A' || letter == 'o' || letter == 'O' ||
+//            letter == 'e' || letter == 'E' || letter == 'u' || letter == 'U' ||
+//            letter == 'i' || letter == 'I')
+//
+//}
+//fun square(a: Int): Int{
+//    val b = a * a
+//    return b
+//}
+//
+//fun divide(a: Long, b: Long): Double {
+//    val c = a.toDouble()
+//    val d = b.toDouble()
+//    var result: Double = c / d
+//    return result
+//}
+//
+//fun isRightEquation(a: Int, b: Int, c: Int): Boolean {
+//    return a * b == c
+//}
+//
+//fun isGreater(a: Int, b: Int, c: Int, d: Int) = a + b > c + d
 
-fun sum(a:Int, b:Int, c:Int): Int {
-    return a + b + c
-}
 
-fun isVowel(letter: Char): Boolean {
-    return (letter == 'a' || letter == 'A' || letter == 'o' || letter == 'O' ||
-            letter == 'e' || letter == 'E' || letter == 'u' || letter == 'U' ||
-            letter == 'i' || letter == 'I')
+// wWhile and do-while loops
 
-}
-fun square(a: Int): Int{
-    val b = a * a
-    return b
-}
+fun main() {
+//    val range = 1..50
+//    val num = 0
+//    while (num in range){
+//
+//    }
 
-fun divide(a: Long, b: Long): Double {
-    val c = a.toDouble()
-    val d = b.toDouble()
-    var result: Double = c / d
-    return result
-}
+//    task 2
+//    var i = 5
+//    do {
+//        i++
+//        print("$i ")
+//        i -= 2
+//    } while (i > 1)
 
-fun isRightEquation(a: Int, b: Int, c: Int): Boolean {
-    return a * b == c
-}
+//    task 3
 
-fun isGreater(a: Int, b: Int, c: Int, d: Int) = a + b > c + d
+//    var sum = 0
+//    do {
+//        val n = readLine()!!.toInt()
+//        sum += n
+//    } while (n > 0)
+//    println(sum)
+//    task 4
+//    val scanner = Scanner(java.lang.System.`in`)
+//    val n = scanner.nextInt()
+
+
+//    task 5
+//    var n = readLine()!!.toInt()
+//    var m = n
+//    do {
+//        if (m % 2 == 0 ){
+//            m = m / 2
+//        }
+//        if (m % 2 != 0){
+//            m = m * 3 + 1
+//        }
+//        println(m)
+//    } while (m >= 1)
+
+//
+
+
+
+
+//    val a: Int = readLine()!!.toInt()
+//    val b: Int = readLine()!!.toInt()
+//    val c: Int = readLine()!!.toInt()
+//
+//    sum (a, b, c)
+
+
+
+//    while (scanner.hasNext()){
+//        val next = scanner.next()
+//        println(next)
+//    }
+
+//    val char = scanner.nextLine()
+//    val char2 = scanner.nextLine()
+//
+//    println(char.toUpperCase() == char2 || char2.toUpperCase() == char)
+    var scanner = Scanner(java.lang.System.`in`)
+    test()
+}
+fun test() {
+    println("Let's test your programming knowledge.")
+    println("Why do we use methods?\n" +
+            "1. To repeat a statement multiple times.\n" +
+            "2. To decompose a program into several small subroutines.\n" +
+            "3. To determine the execution time of a program.\n" +
+            "4. To interrupt the execution of a program.")
+     while( true) {
+         var unswer = readLine()!!.toInt()
+         if ( unswer != 2) println("Please, try again.")
+         if (unswer == 2) break
+
+     }
+}
+fun end() {
+    println("Congratulations, have a nice day!")
+}
 
 
 
